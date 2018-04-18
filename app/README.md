@@ -11,7 +11,7 @@ docker-compose build app && docker-compose run app rspec
 Each code/test follows the naming as dXtY_TITLE, being Y the task correspondent to the Xth day of the challenge and TITLE being its title. Thus, the tasks names are the following:
 
 - d0t1_mean_median_and_mode
-- d0t2_wighted_mean
+- d0t2_weighted_mean
 - d1t1_quartiles
 - d2t2_interquartile_range
 - d2t3_standard_deviation
