@@ -13,6 +13,6 @@ Each code/test follows the naming as dXtY_TITLE, being Y the task correspondent 
 - d0t1_mean_median_and_mode
 - d0t2_weighted_mean
 - d1t1_quartiles
-- d2t2_interquartile_range
-- d2t3_standard_deviation
+- d1t2_interquartile_range
+- d1t3_standard_deviation
 - ...
