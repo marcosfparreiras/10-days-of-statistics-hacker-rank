@@ -2,7 +2,7 @@
 
 require_relative '../src/d0t1_mean_median_and_mode'
 
-describe Calculator do
+describe D0T1::Calculator do
   let(:numbers) { [3, 7, 5, 4, 8, 8, 9] }
   subject { described_class.new(numbers) }
 

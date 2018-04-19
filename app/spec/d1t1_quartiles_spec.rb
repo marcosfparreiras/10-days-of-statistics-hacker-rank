@@ -2,7 +2,7 @@
 
 require_relative '../src/d1t1_quartiles'
 
-describe Calculator do
+describe D1T1::Calculator do
   describe '#quartiles' do
     context 'when has odd number of elements' do
       let(:odd_numbers) { [3, 7, 5, 4, 8, 8, 9] }

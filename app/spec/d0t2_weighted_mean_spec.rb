@@ -2,7 +2,7 @@
 
 require_relative '../src/d0t2_weighted_mean'
 
-describe Calculator do
+describe D0T2::Calculator do
   let(:numbers) { [2, 4, 5, 6, 2] }
   let(:weights) { [1, 2, 1, 5, 3] }
 

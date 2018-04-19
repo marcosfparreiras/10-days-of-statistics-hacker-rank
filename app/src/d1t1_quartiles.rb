@@ -1,27 +1,29 @@
 # frozen_string_literal: true
 
-class Calculator
-  def initialize(numbers)
-    @numbers = numbers.sort
-    @quartiles = []
-  end
+module D1T1
+  class Calculator
+    def initialize(numbers)
+      @numbers = numbers.sort
+      @quartiles = []
+    end
 
-  def quartiles
-    middle = @numbers.size / 2
-    q3_starting_point = @numbers.size.odd? ? middle + 1 : middle
+    def quartiles
+      middle = @numbers.size / 2
+      q3_starting_point = @numbers.size.odd? ? middle + 1 : middle
 
-    @quartiles[0] = median(@numbers[0..(middle - 1)])
-    @quartiles[1] = median(@numbers)
-    @quartiles[2] = median(@numbers[q3_starting_point..-1])
-    @quartiles
-  end
+      @quartiles[0] = median(@numbers[0..(middle - 1)])
+      @quartiles[1] = median(@numbers)
+      @quartiles[2] = median(@numbers[q3_starting_point..-1])
+      @quartiles
+    end
 
-  private
+    private
 
-  def median(numbers)
-    middle = numbers.size / 2
-    return numbers[middle] if numbers.size.odd?
-    (numbers[middle] + numbers[middle - 1]) / 2
+    def median(numbers)
+      middle = numbers.size / 2
+      return numbers[middle] if numbers.size.odd?
+      (numbers[middle] + numbers[middle - 1]) / 2
+    end
   end
 end
 
@@ -31,6 +33,6 @@ if $PROGRAM_NAME == __FILE__
   numbers_string = gets.strip
   numbers = numbers_string.split(' ').map(&:to_i)
 
-  calculator = Calculator.new(numbers)
+  calculator = D1T1::Calculator.new(numbers)
   puts calculator.quartiles
 end

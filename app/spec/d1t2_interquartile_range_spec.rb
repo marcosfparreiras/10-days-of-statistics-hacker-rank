@@ -2,7 +2,7 @@
 
 require_relative '../src/d1t2_interquartile_range'
 
-describe Calculator do
+describe D1T2::Calculator do
   describe '#quartiles' do
     context 'when has odd number of elements' do
       let(:odd_numbers) { [3, 7, 5, 4, 8, 8, 9] }
@@ -62,10 +62,10 @@ describe Calculator do
   end
 end
 
-describe ArrayConstructor do
+describe D1T2::ArrayConstructor do
   let(:size) { 6 }
-  let(:numbers) { [ 1, 5, 2, 6, 3, 9] }
-  let(:frequencies) { [ 2, 1, 3, 4, 1, 2] }
+  let(:numbers) { [1, 5, 2, 6, 3, 9] }
+  let(:frequencies) { [2, 1, 3, 4, 1, 2] }
 
   describe '#build' do
     it 'builds the array with the frequencies' do
@@ -76,12 +76,12 @@ describe ArrayConstructor do
   end
 end
 
-describe Solution do
+describe D1T2::Solution do
   let(:size) { 6 }
   let(:numbers) { [6, 12, 8, 10, 20, 16] }
   let(:frequencies) { [5, 4, 3, 2, 1, 5] }
 
   it 'gets right interquartile range for built array with frequencies' do
-    expect(Solution.answer(size, numbers, frequencies)).to eq(9.0)
+    expect(described_class.answer(size, numbers, frequencies)).to eq(9.0)
   end
 end

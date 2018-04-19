@@ -2,8 +2,8 @@
 
 require_relative '../src/d1t3_standard_deviation'
 
-describe Calculator do
-  let (:numbers) { [10, 40, 30, 50, 20] }
+describe D1T3::Calculator do
+  let(:numbers) { [10, 40, 30, 50, 20] }
 
   describe '.standard_deviation' do
     it 'calculates right standard deviation' do
