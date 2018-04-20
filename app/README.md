@@ -18,4 +18,7 @@ Each code/test follows the naming as dXtY_TITLE, being Y the task correspondent 
 - d2t1_basic_probability
 - d2t2_more_dice
 - d2t3_compound_event_probability
+- d3t1_conditional_probability
+- d3t2_cards_of_the_same_suit
+- d3t3_drawing_marbles
 - ...
