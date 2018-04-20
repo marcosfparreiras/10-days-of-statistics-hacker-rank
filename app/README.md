@@ -15,4 +15,7 @@ Each code/test follows the naming as dXtY_TITLE, being Y the task correspondent 
 - d1t1_quartiles
 - d1t2_interquartile_range
 - d1t3_standard_deviation
+- d2t1_basic_probability
+- d2t2_more_dice
+- d2t3_compound_event_probability
 - ...
